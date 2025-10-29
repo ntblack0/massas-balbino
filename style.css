@@ -37,14 +37,17 @@ body{
   border-bottom:1px solid rgba(0,0,0,0.04);
   backdrop-filter: blur(6px);
 }
+
 .header-inner{
   display:flex;
   align-items:center;
-  justify-content:space-between;
+  justify-content:center;
   gap:var(--gap);
   padding:0.5rem 0;
 }
-.brand{
+.brand{ 
+  position: absolute;
+  left: 1rem;
   font-weight:700;
   text-decoration:none;
   color:var(--accent-dark);
@@ -55,9 +58,11 @@ body{
 .primary-nav ul{
   list-style:none;
   display:flex;
+  justify-content: center;
   gap:1rem;
   margin:0;
   padding:0;
+  width: 100%;
 }
 .primary-nav a{
   text-decoration:none;
