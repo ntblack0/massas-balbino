@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Massas Balbino — Cantina Italiana</title>
+  <meta name="description" content="Cantina italiana Massas Balbino — receitas caseiras, ambiente familiar e serviço atencioso." />
+
+  <link href="Webalys-Kameleon.pics-Chef-2.512.png" rel="icon">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="data:;base64,iVBORw0KGgo="> <!-- placeholder -->
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand">Massas <span>Balbino</span></a>
+
+      <button id="nav-toggle" class="nav-toggle" aria-controls="primary-nav" aria-expanded="false">
+        ☰
+      </button>
+
+      <nav id="primary-nav" class="primary-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="#home">Início</a></li>
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <h1>Sabores da Itália no coração da cidade</h1>
+          <p>Massas artesanais, molho caseiro e pães fresquinhos para sua mesa.</p>
+          <a class="btn" href="#menu">Ver o Menu</a>
+        </div>
+        <div class="hero-image" aria-hidden="true">
+            <!--Se ta lendo sai e vai lavar a louça parceiro-->
+          <div class="placeholder-img"><img class="placeholder-img" src="https://th.bing.com/th/id/OIP.ILQWXTUFIoEyBLuDp-95MgHaE8?w=270&h=180&c=7&r=0&o=7&pid=1.7&rm=3" alt="cozinheiro"></div>
+        </div> 
+      </div>
+    </section>
+
+    <!-- SOBRE tudo e todos pq o bagui é doido -->
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre a Cantina</h2>
+        <p>
+          Inciado por Eliane Balbino, a nossa cantina traz receitas tradicionais italianas
+          com ingredientes frescos e preparo artesanal. Ambiente familiar e atendimento acolhedor.
+        </p>
+
+        <div class="cards">
+          <article class="card">
+            <h3>Receitas Caseiras</h3>
+            <p>Massa fresca feita diariamente, molhos preparados com tomates selecionados.</p>
+          </article>
+          <article class="card">
+            <h3>Praticidade</h3>
+            <p>Perfeito para almoços em família, encontros e pequenos eventos.</p>
+          </article>
+          <article class="card">
+            <h3>Qualidade</h3>
+            <p>Produtos locais e atenção aos detalhes em cada prato.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU -->
+    <section id="menu" class="section alt">
+      <div class="container">
+        <h2>Menu Destaque</h2>
+        <p class="muted">Pratos selecionados — Assado ou Congelado direto para sua casa.</p>
+
+        <div class="menu-grid">
+          <div class="menu-item">
+            <h4>Espaguete alla Carbonara</h4>
+            <p class="desc">Ovo, pecorino e pancetta — receita tradicional.</p>
+            <span class="price">R$ 28,00</span>
+          </div>
+
+          <div class="menu-item">
+            <h4>Ravioli de Ricota e Espinafre</h4>
+            <p class="desc">Molho manteiga e sálvia.</p>
+            <span class="price">R$ 32,00</span>
+          </div>
+
+          <div class="menu-item">
+            <h4>Lasagna da Nonna</h4>
+            <p class="desc">Camadas generosas de molho e queijo.</p>
+            <span class="price">R$ 35,00</span>
+          </div>
+
+          <div class="menu-item">
+            <h4>Polenta com Ragu</h4>
+            <p class="desc">Confort food com toque do chef.</p>
+            <span class="price">R$ 27,00</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contato & Localização</h2>
+          <p>Rua das Massas, 123 — Centro</p>
+          <p>Seg — Sex: 11:30 — 14:30 / 18:00 — 22:00</p>
+          <p>Telefone: (11) 9 9999-9999</p>
+          <p class="muted">Aceitamos reservas e encomendas para eventos pequenos.</p>
+        </div>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" type="text" required />
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required />
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+          <button type="submit" class="btn">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Massas Balbino — Todos os direitos reservados.</p>
+      <p class="muted">Feito com carinho • Cantina típica italiana</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
