@@ -1,4 +1,3 @@
-// Navegação mobile + smooth scroll + form simples
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.getElementById('nav-toggle');
   const nav = document.getElementById('primary-nav');
@@ -8,8 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.setAttribute('aria-expanded', String(!expanded));
     nav.classList.toggle('open');
   });
-
-  // Smooth scroll for internal links
+ 
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', (e) => {
       const href = a.getAttribute('href');
@@ -36,12 +34,10 @@ document.addEventListener('DOMContentLoaded', () => {
     if (!nome || !email || !msg) {
       alert('Por favor, preencha todos os campos.');
       return;
-    }
-    // simula envio
+    } 
     alert('Mensagem enviada! Em breve entraremos em contato.');
     form.reset();
   });
 
-  // ano no rodapé
   document.getElementById('year').textContent = new Date().getFullYear();
 });
